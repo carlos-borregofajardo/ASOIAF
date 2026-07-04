@@ -1,0 +1,12 @@
+{
+    "id": "my-chronicle-statuses",
+    "title": "Mis Estados Alterados para Chronicle System",
+    "version": "0.0.1",
+    "compatibility": {
+        "minimum": "11",
+        "verified": "11"
+    },
+    "scripts": [
+        "scripts/status-effects.js"
+    ]
+}
