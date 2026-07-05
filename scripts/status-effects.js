@@ -344,7 +344,7 @@
         {
             id: "Pequeño",
             label: "Pequeño",
-            icon: "modules/ASOIAF/icon/pequeño.svg",
+            icon: "modules/ASOIAF/icon/pequeno.svg",
             description: "+2 a la Defensa.",
             changes: [
                 {
