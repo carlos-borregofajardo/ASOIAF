@@ -42,12 +42,12 @@
                     key: "system.abilities.Agility.dice",
                     mode: CONST.ACTIVE_EFFECT_MODES.ADD,
                     value: -1
-                }
+                },
                 {
                     key: "system.abilities.Athletics.dice",
                     mode: CONST.ACTIVE_EFFECT_MODES.ADD,
                     value: -1
-                }
+                },
                 {
                     key: "system.abilities.Fighting.dice",
                     mode: CONST.ACTIVE_EFFECT_MODES.ADD,
@@ -75,12 +75,12 @@
                     key: "system.abilities.Agility.dice",
                     mode: CONST.ACTIVE_EFFECT_MODES.ADD,
                     value: -2
-                }
+                },
                 {
                     key: "system.abilities.Athletics.dice",
                     mode: CONST.ACTIVE_EFFECT_MODES.ADD,
                     value: -2
-                }
+                },
                 {
                     key: "system.abilities.Fighting.dice",
                     mode: CONST.ACTIVE_EFFECT_MODES.ADD,
@@ -361,65 +361,66 @@
             description: "-1 al movimiento, -5 a todas las tiradas.",
             changes: [
                 {
-                    key: "system.abilities.Agility",
+                    key: "system.abilities.Agility.total",
                     mode: CONST.ACTIVE_EFFECT_MODES.ADD,
                     value: -5
                 },
                 {
-                    key: "system.abilities.AnimalHandling",
+                    key: "system.abilities.AnimalHandling.total",
                     mode: CONST.ACTIVE_EFFECT_MODES.ADD,
                     value: -5
                 },
                 {
-                    key: "system.abilities.Athletics",
+                    key: "system.abilities.Athletics.total",
                     mode: CONST.ACTIVE_EFFECT_MODES.ADD,
                     value: -5
                 },
                 {
-                    key: "system.abilities.Awareness",
+                    key: "system.abilities.Awareness.total",
                     mode: CONST.ACTIVE_EFFECT_MODES.ADD,
                     value: -5
                 },
                 {
-                    key: "system.abilities.Cunning",
+                    key: "system.abilities.Cunning.total",
                     mode: CONST.ACTIVE_EFFECT_MODES.ADD,
                     value: -5
                 },
                 {
-                    key: "system.abilities.Endurance",
+                    key: "system.abilities.Endurance.total",
                     mode: CONST.ACTIVE_EFFECT_MODES.ADD,
                     value: -5
                 },
                 {
-                    key: "system.abilities.Fighting",
+                    key: "system.abilities.Fighting.total",
                     mode: CONST.ACTIVE_EFFECT_MODES.ADD,
                     value: -5
                 },
                 {
-                    key: "system.abilities.Marksmanship",
+                    key: "system.abilities.Marksmanship.total",
                     mode: CONST.ACTIVE_EFFECT_MODES.ADD,
                     value: -5
                 },
                 {
-                    key: "system.abilities.Persuasion",
+                    key: "system.abilities.Persuasion.total",
                     mode: CONST.ACTIVE_EFFECT_MODES.ADD,
                     value: -5
                 },
                 {
-                    key: "system.abilities.Stealth",
+                    key: "system.abilities.Stealth.total",
                     mode: CONST.ACTIVE_EFFECT_MODES.ADD,
                     value: -5
                 },
                 {
-                    key: "system.abilities.Thievery",
+                    key: "system.abilities.Thievery.total",
                     mode: CONST.ACTIVE_EFFECT_MODES.ADD,
                     value: -5
                 },
                 {
-                    key: "system.abilities.Will",
+                    key: "system.abilities.Will.total",
                     mode: CONST.ACTIVE_EFFECT_MODES.ADD,
                     value: -5
                 }
+            ]
         },
         {
             id: "Inconsciente",
