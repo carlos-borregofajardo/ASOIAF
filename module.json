@@ -8,5 +8,8 @@
     },
     "scripts": [
         "scripts/status-effects.js"
+    ],
+    "assets": [
+        "icon"
     ]
 }
