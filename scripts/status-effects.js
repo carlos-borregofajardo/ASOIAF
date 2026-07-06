@@ -151,7 +151,7 @@
         {
             id: "Cedido",
             label: "Cedido",
-            icon: "modules/ASOIAF/icon/cedido.svg",
+            icon: "icons/svg/angel.svg",
             description: "+2B a la próxima tirada, no puede superar el rango de la habilidad."
         },
         {
@@ -183,7 +183,7 @@
         {
             id: "Suelo",
             label: "En el suelo",
-            icon: "icons/svg/prone.svg",
+            icon: "icons/svg/falling.svg",
             description: "+1D a FIGHTING a los atacantes."
         },
         {
@@ -357,7 +357,7 @@
         {
             id: "Apresado",
             label: "Apresado",
-            icon: "icons/svg/falling.svg",
+            icon: "icons/svg/net.svg",
             description: "-1 al movimiento, -5 a todas las tiradas.",
             changes: [
                 {
