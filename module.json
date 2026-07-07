@@ -2,20 +2,25 @@
     "id": "ASOIAF",
     "title": "Mis Estados Alterados para Chronicle System",
     "description": "Estados personalizados para Chronicle System con iconos y efectos.",
-    "version": "0.0.5",
-
+    "version": "0.0.6",
+    "manifest": "https://raw.githubusercontent.com/carlos-borregofajardo/ASOIAF/main/module.json",
+    "download": "https://github.com/carlos-borregofajardo/ASOIAF/releases/download/v0.0.6/ASOIAF.zip",
     "compatibility": {
         "minimum": "11",
         "verified": "11"
     },
-
-    "manifest": "https://raw.githubusercontent.com/carlos-borregofajardo/ASOIAF/main/module.json",
-    "download": "https://github.com/carlos-borregofajardo/ASOIAF/releases/download/v0.0.5/ASOIAF.zip",
-
+    "relationships": {
+        "systems": [
+            {
+                "id": "chroniclesystem",
+                "type": "system"
+            }
+        ]
+    },
     "scripts": [
-        "scripts/status-effects.js"
+        "scripts/status-effects.js",
+        "scripts/Fix_csCharacterActor.js"
     ],
-
     "assets": [
         "icon"
     ]

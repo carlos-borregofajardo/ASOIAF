@@ -11,11 +11,19 @@
             label: "Cobertura media",
             icon: "modules/ASOIAF/icon/cobertura-media.svg",
             description: "+5 a la Defensa en combate.",
-            changes: [
+            effects: [
                 {
-                    key: "system.defense.total",
-                    mode: CONST.ACTIVE_EFFECT_MODES.ADD,
-                    value: 5
+                    label: "Cobertura media",
+                    icon: "modules/ASOIAF/icon/cobertura-media.svg",
+                    disabled: false,
+                    transfer: true,
+                    changes: [
+                        {
+                            key: "system.defense.total",
+                            mode: CONST.ACTIVE_EFFECT_MODES.ADD,
+                            value: 5
+                        }
+                    ]
                 }
             ]
         },
@@ -24,11 +32,19 @@
             label: "Cobertura completa",
             icon: "modules/ASOIAF/icon/cobertura-completa.svg",
             description: "+10 a la Defensa en combate.",
-            changes: [
+            effects: [
                 {
-                    key: "system.defense.total",
-                    mode: CONST.ACTIVE_EFFECT_MODES.ADD,
-                    value: 10
+                    label: "Cobertura completa",
+                    icon: "modules/ASOIAF/icon/cobertura-completa.svg",
+                    disabled: false,
+                    transfer: true,
+                    changes: [
+                        {
+                            key: "system.defense.total",
+                            mode: CONST.ACTIVE_EFFECT_MODES.ADD,
+                            value: 10
+                        }
+                    ]
                 }
             ]
         },
@@ -36,32 +52,40 @@
             id: "Penumbra",
             label: "Penumbra",
             icon: "modules/ASOIAF/icon/penumbra.svg",
-            description: "-1D en AGILITY, -1D ATHLETICS, -1D FIGHTING, -1D THIEVERY y -2D MARKSMANSHIP.",
-            changes: [
+            description: "-1D en AGILITY, ATHLETICS, FIGHTING, THIEVERY y -2D en MARKSMANSHIP.",
+            effects: [
                 {
-                    key: "system.abilities.Agility.dice",
-                    mode: CONST.ACTIVE_EFFECT_MODES.ADD,
-                    value: -1
-                },
-                {
-                    key: "system.abilities.Athletics.dice",
-                    mode: CONST.ACTIVE_EFFECT_MODES.ADD,
-                    value: -1
-                },
-                {
-                    key: "system.abilities.Fighting.dice",
-                    mode: CONST.ACTIVE_EFFECT_MODES.ADD,
-                    value: -1
-                },
-                {
-                    key: "system.abilities.Thievery.dice",
-                    mode: CONST.ACTIVE_EFFECT_MODES.ADD,
-                    value: -1
-                },
-                {
-                    key: "system.abilities.Marksmanship.dice",
-                    mode: CONST.ACTIVE_EFFECT_MODES.ADD,
-                    value: -2
+                    label: "Penumbra",
+                    icon: "modules/ASOIAF/icon/penumbra.svg",
+                    disabled: false,
+                    transfer: true,
+                    changes: [
+                        {
+                            key: "system.abilities.Agility.dice",
+                            mode: CONST.ACTIVE_EFFECT_MODES.ADD,
+                            value: -1
+                        },
+                        {
+                            key: "system.abilities.Athletics.dice",
+                            mode: CONST.ACTIVE_EFFECT_MODES.ADD,
+                            value: -1
+                        },
+                        {
+                            key: "system.abilities.Fighting.dice",
+                            mode: CONST.ACTIVE_EFFECT_MODES.ADD,
+                            value: -1
+                        },
+                        {
+                            key: "system.abilities.Thievery.dice",
+                            mode: CONST.ACTIVE_EFFECT_MODES.ADD,
+                            value: -1
+                        },
+                        {
+                            key: "system.abilities.Marksmanship.dice",
+                            mode: CONST.ACTIVE_EFFECT_MODES.ADD,
+                            value: -2
+                        }
+                    ]
                 }
             ]
         },
@@ -69,32 +93,40 @@
             id: "Oscuridad",
             label: "Oscuridad",
             icon: "modules/ASOIAF/icon/oscuridad.svg",
-            description: "-2D en AGILITY, -2D ATHLETICS, -2D FIGHTING, -2D THIEVERY y -4D MARKSMANSHIP.",
-            changes: [
+            description: "-2D en AGILITY, ATHLETICS, FIGHTING, THIEVERY y -4D en MARKSMANSHIP.",
+            effects: [
                 {
-                    key: "system.abilities.Agility.dice",
-                    mode: CONST.ACTIVE_EFFECT_MODES.ADD,
-                    value: -2
-                },
-                {
-                    key: "system.abilities.Athletics.dice",
-                    mode: CONST.ACTIVE_EFFECT_MODES.ADD,
-                    value: -2
-                },
-                {
-                    key: "system.abilities.Fighting.dice",
-                    mode: CONST.ACTIVE_EFFECT_MODES.ADD,
-                    value: -2
-                },
-                {
-                    key: "system.abilities.Thievery.dice",
-                    mode: CONST.ACTIVE_EFFECT_MODES.ADD,
-                    value: -2
-                },
-                {
-                    key: "system.abilities.Marksmanship.dice",
-                    mode: CONST.ACTIVE_EFFECT_MODES.ADD,
-                    value: -4
+                    label: "Oscuridad",
+                    icon: "modules/ASOIAF/icon/oscuridad.svg",
+                    disabled: false,
+                    transfer: true,
+                    changes: [
+                        {
+                            key: "system.abilities.Agility.dice",
+                            mode: CONST.ACTIVE_EFFECT_MODES.ADD,
+                            value: -2
+                        },
+                        {
+                            key: "system.abilities.Athletics.dice",
+                            mode: CONST.ACTIVE_EFFECT_MODES.ADD,
+                            value: -2
+                        },
+                        {
+                            key: "system.abilities.Fighting.dice",
+                            mode: CONST.ACTIVE_EFFECT_MODES.ADD,
+                            value: -2
+                        },
+                        {
+                            key: "system.abilities.Thievery.dice",
+                            mode: CONST.ACTIVE_EFFECT_MODES.ADD,
+                            value: -2
+                        },
+                        {
+                            key: "system.abilities.Marksmanship.dice",
+                            mode: CONST.ACTIVE_EFFECT_MODES.ADD,
+                            value: -4
+                        }
+                    ]
                 }
             ]
         },
@@ -115,11 +147,19 @@
             label: "Aplastado",
             icon: "modules/ASOIAF/icon/aplastado.svg",
             description: "-5 Defensa en combate",
-            changes: [
+            effects: [
                 {
-                    key: "system.defense.total",
-                    mode: CONST.ACTIVE_EFFECT_MODES.ADD,
-                    value: -5
+                    label: "Aplastado",
+                    icon: "modules/ASOIAF/icon/aplastado.svg",
+                    disabled: false,
+                    transfer: true,
+                    changes: [
+                        {
+                            key: "system.defense.total",
+                            mode: CONST.ACTIVE_EFFECT_MODES.ADD,
+                            value: -5
+                        }
+                    ]
                 }
             ]
         },
@@ -134,11 +174,19 @@
             label: "Indefenso",
             icon: "modules/ASOIAF/icon/indefenso.svg",
             description: "AGILITY no suma para la Defensa, +1D FIGHTING y +1D MARKSMANSHIP a los atacantes",
-            changes: [
+            effects: [
                 {
-                    key: "system.defense.total",
-                    mode: CONST.ACTIVE_EFFECT_MODES.ADD,
-                    value: "-@actor.system.abilities.Agility"
+                    label: "Indefenso",
+                    icon: "modules/ASOIAF/icon/indefenso.svg",
+                    disabled: false,
+                    transfer: true,
+                    changes: [
+                        {
+                            key: "system.defense.total",
+                            mode: CONST.ACTIVE_EFFECT_MODES.ADD,
+                            value: "-@actor.system.abilities.Agility.rank"
+                        }
+                    ]
                 }
             ]
         },
@@ -158,12 +206,20 @@
             id: "Esquivar",
             label: "Esquivar",
             icon: "modules/ASOIAF/icon/esquivando.svg",
-            description: "Defensa es igual la tirada de AGILITY",
-            changes: [
+            description: "Defensa es igual al rango de AGILITY.",
+            effects: [
                 {
-                    key: "system.defense.total",
-                    mode: CONST.ACTIVE_EFFECT_MODES.ADD,
-                    value: "-@actor.system.abilities.Agility"
+                    label: "Esquivar",
+                    icon: "modules/ASOIAF/icon/esquivando.svg",
+                    disabled: false,
+                    transfer: true,
+                    changes: [
+                        {
+                            key: "system.defense.total",
+                            mode: CONST.ACTIVE_EFFECT_MODES.ADD,
+                            value: "-@actor.system.abilities.Agility.rank"
+                        }
+                    ]
                 }
             ]
         },
@@ -172,11 +228,19 @@
             label: "Elevado",
             icon: "modules/ASOIAF/icon/elevado.svg",
             description: "+1B a FIGHTING.",
-            changes: [
+            effects: [
                 {
-                    key: "system.abilities.Fighting.bonus",
-                    mode: CONST.ACTIVE_EFFECT_MODES.ADD,
-                    value: 1
+                    label: "Elevado",
+                    icon: "modules/ASOIAF/icon/elevado.svg",
+                    disabled: false,
+                    transfer: true,
+                    changes: [
+                        {
+                            key: "system.abilities.Fighting.bonus",
+                            mode: CONST.ACTIVE_EFFECT_MODES.ADD,
+                            value: 1
+                        }
+                    ]
                 }
             ]
         },
@@ -197,16 +261,24 @@
             label: "Cauteloso",
             icon: "modules/ASOIAF/icon/cauteloso.svg",
             description: "-1D a FIGHTING y +3 a la Defensa.",
-            changes: [
+            effects: [
                 {
-                    key: "system.abilities.Fighting.dice",
-                    mode: CONST.ACTIVE_EFFECT_MODES.ADD,
-                    value: -1
-                },
-                {
-                    key: "system.defense.total",
-                    mode: CONST.ACTIVE_EFFECT_MODES.ADD,
-                    value: 3
+                    label: "Cauteloso",
+                    icon: "modules/ASOIAF/icon/cauteloso.svg",
+                    disabled: false,
+                    transfer: true,
+                    changes: [
+                        {
+                            key: "system.abilities.Fighting.dice",
+                            mode: CONST.ACTIVE_EFFECT_MODES.ADD,
+                            value: -1
+                        },
+                        {
+                            key: "system.defense.total",
+                            mode: CONST.ACTIVE_EFFECT_MODES.ADD,
+                            value: 3
+                        }
+                    ]
                 }
             ]
         },
@@ -215,16 +287,24 @@
             label: "Temerario",
             icon: "modules/ASOIAF/icon/temerario.svg",
             description: "+1D a FIGHTING y -5 a la Defensa.",
-            changes: [
+            effects: [
                 {
-                    key: "system.abilities.Fighting.dice",
-                    mode: CONST.ACTIVE_EFFECT_MODES.ADD,
-                    value: 1
-                },
-                {
-                    key: "system.defense.total",
-                    mode: CONST.ACTIVE_EFFECT_MODES.ADD,
-                    value: -5
+                    label: "Temerario",
+                    icon: "modules/ASOIAF/icon/temerario.svg",
+                    disabled: false,
+                    transfer: true,
+                    changes: [
+                        {
+                            key: "system.abilities.Fighting.dice",
+                            mode: CONST.ACTIVE_EFFECT_MODES.ADD,
+                            value: 1
+                        },
+                        {
+                            key: "system.defense.total",
+                            mode: CONST.ACTIVE_EFFECT_MODES.ADD,
+                            value: -5
+                        }
+                    ]
                 }
             ]
         },
@@ -239,11 +319,19 @@
             label: "Distraído",
             icon: "modules/ASOIAF/icon/distraido.svg",
             description: "AWARENESS no suma a la Defensa.",
-            changes: [
+            effects: [
                 {
-                    key: "system.defense.total",
-                    mode: CONST.ACTIVE_EFFECT_MODES.ADD,
-                    value: "-@actor.system.abilities.Awareness"
+                    label: "Distraído",
+                    icon: "modules/ASOIAF/icon/distraido.svg",
+                    disabled: false,
+                    transfer: true,
+                    changes: [
+                        {
+                            key: "system.defense.total",
+                            mode: CONST.ACTIVE_EFFECT_MODES.ADD,
+                            value: "-@actor.system.abilities.Awareness.rank"
+                        }
+                    ]
                 }
             ]
         },
@@ -252,66 +340,74 @@
             label: "Hostigado",
             icon: "modules/ASOIAF/icon/hostigado.svg",
             description: "-1D a todas las tiradas.",
-            changes: [
+            effects: [
                 {
-                    key: "system.abilities.Agility.dice",
-                    mode: CONST.ACTIVE_EFFECT_MODES.ADD,
-                    value: -1
-                },
-                {
-                    key: "system.abilities.AnimalHandling.dice",
-                    mode: CONST.ACTIVE_EFFECT_MODES.ADD,
-                    value: -1
-                },
-                {
-                    key: "system.abilities.Athletics.dice",
-                    mode: CONST.ACTIVE_EFFECT_MODES.ADD,
-                    value: -1
-                },
-                {
-                    key: "system.abilities.Awareness.dice",
-                    mode: CONST.ACTIVE_EFFECT_MODES.ADD,
-                    value: -1
-                },
-                {
-                    key: "system.abilities.Cunning.dice",
-                    mode: CONST.ACTIVE_EFFECT_MODES.ADD,
-                    value: -1
-                },
-                {
-                    key: "system.abilities.Endurance.dice",
-                    mode: CONST.ACTIVE_EFFECT_MODES.ADD,
-                    value: -1
-                },
-                {
-                    key: "system.abilities.Fighting.dice",
-                    mode: CONST.ACTIVE_EFFECT_MODES.ADD,
-                    value: -1
-                },
-                {
-                    key: "system.abilities.Marksmanship.dice",
-                    mode: CONST.ACTIVE_EFFECT_MODES.ADD,
-                    value: -1
-                },
-                {
-                    key: "system.abilities.Persuasion.dice",
-                    mode: CONST.ACTIVE_EFFECT_MODES.ADD,
-                    value: -1
-                },
-                {
-                    key: "system.abilities.Stealth.dice",
-                    mode: CONST.ACTIVE_EFFECT_MODES.ADD,
-                    value: -1
-                },
-                {
-                    key: "system.abilities.Thievery.dice",
-                    mode: CONST.ACTIVE_EFFECT_MODES.ADD,
-                    value: -1
-                },
-                {
-                    key: "system.abilities.Will.dice",
-                    mode: CONST.ACTIVE_EFFECT_MODES.ADD,
-                    value: -1
+                    label: "Hostigado",
+                    icon: "modules/ASOIAF/icon/hostigado.svg",
+                    disabled: false,
+                    transfer: true,
+                    changes: [
+                        {
+                            key: "system.abilities.Agility.dice",
+                            mode: CONST.ACTIVE_EFFECT_MODES.ADD,
+                            value: -1
+                        },
+                        {
+                            key: "system.abilities.AnimalHandling.dice",
+                            mode: CONST.ACTIVE_EFFECT_MODES.ADD,
+                            value: -1
+                        },
+                        {
+                            key: "system.abilities.Athletics.dice",
+                            mode: CONST.ACTIVE_EFFECT_MODES.ADD,
+                            value: -1
+                        },
+                        {
+                            key: "system.abilities.Awareness.dice",
+                            mode: CONST.ACTIVE_EFFECT_MODES.ADD,
+                            value: -1
+                        },
+                        {
+                            key: "system.abilities.Cunning.dice",
+                            mode: CONST.ACTIVE_EFFECT_MODES.ADD,
+                            value: -1
+                        },
+                        {
+                            key: "system.abilities.Endurance.dice",
+                            mode: CONST.ACTIVE_EFFECT_MODES.ADD,
+                            value: -1
+                        },
+                        {
+                            key: "system.abilities.Fighting.dice",
+                            mode: CONST.ACTIVE_EFFECT_MODES.ADD,
+                            value: -1
+                        },
+                        {
+                            key: "system.abilities.Marksmanship.dice",
+                            mode: CONST.ACTIVE_EFFECT_MODES.ADD,
+                            value: -1
+                        },
+                        {
+                            key: "system.abilities.Persuasion.dice",
+                            mode: CONST.ACTIVE_EFFECT_MODES.ADD,
+                            value: -1
+                        },
+                        {
+                            key: "system.abilities.Stealth.dice",
+                            mode: CONST.ACTIVE_EFFECT_MODES.ADD,
+                            value: -1
+                        },
+                        {
+                            key: "system.abilities.Thievery.dice",
+                            mode: CONST.ACTIVE_EFFECT_MODES.ADD,
+                            value: -1
+                        },
+                        {
+                            key: "system.abilities.Will.dice",
+                            mode: CONST.ACTIVE_EFFECT_MODES.ADD,
+                            value: -1
+                        }
+                    ]
                 }
             ]
         },
@@ -320,11 +416,19 @@
             label: "Aturdido",
             icon: "icons/svg/daze.svg",
             description: "-5 a la Defensa.",
-            changes: [
+            effects: [
                 {
-                    key: "system.defense.total",
-                    mode: CONST.ACTIVE_EFFECT_MODES.ADD,
-                    value: -5
+                    label: "Aturdido",
+                    icon: "icons/svg/daze.svg",
+                    disabled: false,
+                    transfer: true,
+                    changes: [
+                        {
+                            key: "system.defense.total",
+                            mode: CONST.ACTIVE_EFFECT_MODES.ADD,
+                            value: -5
+                        }
+                    ]
                 }
             ]
         },
@@ -333,11 +437,19 @@
             label: "Gigante",
             icon: "modules/ASOIAF/icon/gigante.svg",
             description: "-2 a la Defensa.",
-            changes: [
+            effects: [
                 {
-                    key: "system.defense.total",
-                    mode: CONST.ACTIVE_EFFECT_MODES.ADD,
-                    value: -2
+                    label: "Gigante",
+                    icon: "modules/ASOIAF/icon/gigante.svg",
+                    disabled: false,
+                    transfer: true,
+                    changes: [
+                        {
+                            key: "system.defense.total",
+                            mode: CONST.ACTIVE_EFFECT_MODES.ADD,
+                            value: -2
+                        }
+                    ]
                 }
             ]
         },
@@ -346,11 +458,19 @@
             label: "Pequeño",
             icon: "modules/ASOIAF/icon/pequeno.svg",
             description: "+2 a la Defensa.",
-            changes: [
+            effects: [
                 {
-                    key: "system.defense.total",
-                    mode: CONST.ACTIVE_EFFECT_MODES.ADD,
-                    value: 2
+                    label: "Pequeño",
+                    icon: "modules/ASOIAF/icon/pequeno.svg",
+                    disabled: false,
+                    transfer: true,
+                    changes: [
+                        {
+                            key: "system.defense.total",
+                            mode: CONST.ACTIVE_EFFECT_MODES.ADD,
+                            value: 2
+                        }
+                    ]
                 }
             ]
         },
@@ -359,66 +479,74 @@
             label: "Apresado",
             icon: "icons/svg/net.svg",
             description: "-1 al movimiento, -5 a todas las tiradas.",
-            changes: [
+            effects: [
                 {
-                    key: "system.abilities.Agility.total",
-                    mode: CONST.ACTIVE_EFFECT_MODES.ADD,
-                    value: -5
-                },
-                {
-                    key: "system.abilities.AnimalHandling.total",
-                    mode: CONST.ACTIVE_EFFECT_MODES.ADD,
-                    value: -5
-                },
-                {
-                    key: "system.abilities.Athletics.total",
-                    mode: CONST.ACTIVE_EFFECT_MODES.ADD,
-                    value: -5
-                },
-                {
-                    key: "system.abilities.Awareness.total",
-                    mode: CONST.ACTIVE_EFFECT_MODES.ADD,
-                    value: -5
-                },
-                {
-                    key: "system.abilities.Cunning.total",
-                    mode: CONST.ACTIVE_EFFECT_MODES.ADD,
-                    value: -5
-                },
-                {
-                    key: "system.abilities.Endurance.total",
-                    mode: CONST.ACTIVE_EFFECT_MODES.ADD,
-                    value: -5
-                },
-                {
-                    key: "system.abilities.Fighting.total",
-                    mode: CONST.ACTIVE_EFFECT_MODES.ADD,
-                    value: -5
-                },
-                {
-                    key: "system.abilities.Marksmanship.total",
-                    mode: CONST.ACTIVE_EFFECT_MODES.ADD,
-                    value: -5
-                },
-                {
-                    key: "system.abilities.Persuasion.total",
-                    mode: CONST.ACTIVE_EFFECT_MODES.ADD,
-                    value: -5
-                },
-                {
-                    key: "system.abilities.Stealth.total",
-                    mode: CONST.ACTIVE_EFFECT_MODES.ADD,
-                    value: -5
-                },
-                {
-                    key: "system.abilities.Thievery.total",
-                    mode: CONST.ACTIVE_EFFECT_MODES.ADD,
-                    value: -5
-                },
-                {
-                    key: "system.abilities.Will.total",
-                    mode: CONST.ACTIVE_EFFECT_MODES.ADD,
-                    value: -5
+                    label: "Apresado",
+                    icon: "icons/svg/net.svg",
+                    disabled: false,
+                    transfer: true,
+                    changes: [
+                        {
+                            key: "system.abilities.Agility.total",
+                            mode: CONST.ACTIVE_EFFECT_MODES.ADD,
+                            value: -5
+                        },
+                        {
+                            key: "system.abilities.AnimalHandling.total",
+                            mode: CONST.ACTIVE_EFFECT_MODES.ADD,
+                            value: -5
+                        },
+                        {
+                            key: "system.abilities.Athletics.total",
+                            mode: CONST.ACTIVE_EFFECT_MODES.ADD,
+                            value: -5
+                        },
+                        {
+                            key: "system.abilities.Awareness.total",
+                            mode: CONST.ACTIVE_EFFECT_MODES.ADD,
+                            value: -5
+                        },
+                        {
+                            key: "system.abilities.Cunning.total",
+                            mode: CONST.ACTIVE_EFFECT_MODES.ADD,
+                            value: -5
+                        },
+                        {
+                            key: "system.abilities.Endurance.total",
+                            mode: CONST.ACTIVE_EFFECT_MODES.ADD,
+                            value: -5
+                        },
+                        {
+                            key: "system.abilities.Fighting.total",
+                            mode: CONST.ACTIVE_EFFECT_MODES.ADD,
+                            value: -5
+                        },
+                        {
+                            key: "system.abilities.Marksmanship.total",
+                            mode: CONST.ACTIVE_EFFECT_MODES.ADD,
+                            value: -5
+                        },
+                        {
+                            key: "system.abilities.Persuasion.total",
+                            mode: CONST.ACTIVE_EFFECT_MODES.ADD,
+                            value: -5
+                        },
+                        {
+                            key: "system.abilities.Stealth.total",
+                            mode: CONST.ACTIVE_EFFECT_MODES.ADD,
+                            value: -5
+                        },
+                        {
+                            key: "system.abilities.Thievery.total",
+                            mode: CONST.ACTIVE_EFFECT_MODES.ADD,
+                            value: -5
+                        },
+                        {
+                            key: "system.abilities.Will.total",
+                            mode: CONST.ACTIVE_EFFECT_MODES.ADD,
+                            value: -5
+                        }
+                    ]
                 }
             ]
         },
@@ -426,13 +554,13 @@
             id: "Inconsciente",
             label: "Inconsciente",
             icon: "modules/ASOIAF/icon/inconsciente.svg",
-            description: "Inconsciente"
+            description: "Inconsciente."
         },
         {
             id: "Dormido",
             label: "Dormido",
             icon: "icons/svg/sleep.svg",
-            description: "Dormido"
+            description: "Dormido."
         },
         {
             id: "Asustado",
@@ -450,7 +578,7 @@
             id: "Frío",
             label: "Frío",
             icon: "icons/svg/frozen.svg",
-            description: "Frío"
+            description: "Frío."
         },
         {
             id: "Ácido",
@@ -462,7 +590,7 @@
             id: "Sangrado",
             label: "Sangrado",
             icon: "icons/svg/blood.svg",
-            description: "Sangrado"
+            description: "Sangrado."
         },
         {
             id: "Enfermo",
